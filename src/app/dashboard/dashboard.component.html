@@ -1,0 +1,25 @@
+<fieldset class="fldset">
+    <div class ="subtitle">
+        <h3>{{subtitle}} : </h3>
+    </div>
+    <span>
+        <button mat-raised-button #hollyWood (click)='btnholly()'> HOLLYWOOD </button>
+    </span>
+    <span>
+        <button mat-raised-button #kollyWood (click)='btnkolly()'> KOLLYWOOD </button>
+    </span>
+    <span>
+        <button mat-raised-button #bollyWood (click)='btnbolly()'> BOLLYWOOD </button>
+    </span>
+</fieldset>
+<br>
+<div *ngIf='showholly'>
+    <app-hollywood></app-hollywood>
+</div>
+<div *ngIf='showkolly'>
+    <app-kollywood [dynamicInput]=" 'Input from parent' "></app-kollywood>
+</div>
+<div *ngIf='showbolly'>
+        <app-bollywood></app-bollywood>
+    </div>
+   

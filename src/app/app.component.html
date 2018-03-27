@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+    <div class="title">
+        <h1 style="text-align:center">{{title}}</h1>
+    </div>
+</mat-toolbar>
+<br/>
+<div>
+    <span>
+        <a routerLink="/dashboard">
+            <button mat-raised-button name="dashboard">DASHBOARD</button>
+        </a>
+    </span>
+    <span>
+        <a routerLink="/hero">
+            <button mat-raised-button name="hero">HERO</button>
+        </a>
+    </span>
+</div>
+<br/>
+<router-outlet></router-outlet>
+
+<!-- <app-dashboard></app-dashboard>
+<app-hero-comp></app-hero-comp> -->

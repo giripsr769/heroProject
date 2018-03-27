@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+body{
+    background: url("assets/bgbenz.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    display : block;
+    overflow: hidden;
+}
+
+
+*{
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+}
+
+
+fieldset{
+    width: 100%;
+    margin:0px auto;
+    border:1 px solid #fff;
+}

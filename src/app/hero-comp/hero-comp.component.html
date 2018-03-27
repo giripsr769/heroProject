@@ -1,0 +1,34 @@
+<fieldset class="fldset">
+  <span>
+    <h2>
+      {{herolist}} :
+    </h2>
+  </span>
+  <div>
+    <ul>
+      <div *ngFor="let hero of heros; let fir = first; let lst = last"
+       [ngClass]="{first: fir, last: lst}" 
+       (click)= "onselect(hero)">
+        <!-- <li *ngIf="fir || lst"> -->
+        <li><h3>{{hero.name | uppercase}}</h3></li> 
+        <!-- </li> -->
+      </div>
+    </ul>
+  </div>
+  <div class="backbtn">
+    <span>
+      <a routerLink="/dashboard">
+        <button mat-mini-fab #btnback>Back</button>
+      </a>
+    </span>
+  </div>
+</fieldset>
+<fieldset>
+  <label>SUB-Heading</label>
+  <mat-form-field>
+  <input  matInput [(ngModel)]="selectedHero.name" placeholder="HERO Editor">
+</mat-form-field>
+</fieldset>
+
+
+  

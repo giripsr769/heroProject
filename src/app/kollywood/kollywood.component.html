@@ -1,0 +1,11 @@
+<div *ngFor='let fruit of fruits; first as fir; last as lst; index as i; fruits as pazham'
+[ngClass]='{pazham : fruits}'>
+  <ul *ngIf='fir || lst || i'>
+    <li>
+      {{fruit | titlecase }}{{i}}
+    </li>
+  </ul>
+</div><br/>
+<div>
+  {{dynamicInput}}
+</div>

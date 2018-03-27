@@ -1,0 +1,22 @@
+<fieldset>
+  <h3>HollyWood works!</h3>
+
+  <label>HERO ID</label> :
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="ID">
+  </mat-form-field>
+  <br>
+  <label>HERO NAME</label> :
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="NAME">
+  </mat-form-field>
+</fieldset>
+
+<div  *ngFor=" let item of items; first as fir; last as lst; index as i "
+[ngClass]="{first : fir, last : lst, fiv : i==4}">
+<ul>
+    <li>
+      {{item}}
+    </li>
+</ul>
+</div>
